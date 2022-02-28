@@ -7,9 +7,9 @@ import './App.css';
 function App() {
   
   const usersData = [
-    {id: 1, name: "Quốc", username:"nguyenquoc"},
-    {id: 2, name: "Quốc1", username:"nguyenquoc1"},
-    {id:3, name: "Quốc2", username:"nguyenquoc2"},
+    {id: 1, name: "Quốc", username:"nguyenquoc", course:"Lập trình Java"},
+    {id: 2, name: "Quốc1", username:"nguyenquoc1", course:"Lập trình C"},
+    {id:3, name: "Quốc2", username:"nguyenquoc2", course:"Lập trình PHP"},
   ]
 
   const [users, setUsers] = useState(usersData);
@@ -27,12 +27,12 @@ function App() {
 
 //Update User
   const [update, setUpdate] = useState(false);
-  const initialFormState={id: null, name:"", username: ""};
+  const initialFormState={id: null, name:"", username: "", course:""};
   const[currentUser, setCurrentUser] = useState(initialFormState);
   
   const editRow= (user) => {
     setUpdate(true)
-    setCurrentUser({id: user.id, name: user.name, username: user.username});
+    setCurrentUser({id: user.id, name: user.name, username: user.username, course: user.course});
   }
 
   const updateUser = (id, updateUser) => {

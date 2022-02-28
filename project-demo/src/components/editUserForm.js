@@ -30,6 +30,13 @@ const EditUserForm = (props) => {
           value={user.username}
           onChange={handleInputChange}
         />
+        <label> Course: </label>
+        <input
+          type="text"
+          name="course"
+          value={user.course}
+          onChange={handleInputChange}
+        />
         <button>Update Auser</button>
         <button onClick={() => props.setUpdate(false)} >Cancel</button>
 

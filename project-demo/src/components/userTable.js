@@ -5,6 +5,7 @@ const UserTable = (props) => (
             <tr>
                 <th>Name</th>
                 <th>UserName</th>
+                <th>Course</th>
                 <th>Action</th>
             </tr>
         </thead>
@@ -14,6 +15,7 @@ const UserTable = (props) => (
                     <tr key={user.id}>
                     <td>{user.name}</td>
                     <td>{user.username}</td>
+                    <td>{user.course}</td>
                     <td>
                         <button 
                             className="button muted-button"
