@@ -1,0 +1,10 @@
+.button-cancel{
+  border: 1px solid black;
+  background-color: beige;
+}
+table,tr,td,th{
+  border: black solid 1px;
+  border-collapse: collapse;
+  width: 500px;
+
+}
